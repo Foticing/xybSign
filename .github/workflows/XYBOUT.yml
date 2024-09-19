@@ -3,9 +3,9 @@ name: 签退 # yml文件名
 on:
   push:
     branches:
-      - node
+      - main
   schedule:
-    - cron: '0 10 * * *' 
+    - cron: '1 10 * * *' 
   workflow_dispatch:
   watch:
     types: started

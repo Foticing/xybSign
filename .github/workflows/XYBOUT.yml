@@ -5,8 +5,11 @@ on:
     branches:
       - main
   schedule:
-    - cron: '10 10 * * *' 
- 
+    - cron: '30 10 * * *' 
+  workflow_dispatch:
+  watch:
+    types: started
+
 jobs:
   run-check-in: # 任务名
     runs-on: ubuntu-latest

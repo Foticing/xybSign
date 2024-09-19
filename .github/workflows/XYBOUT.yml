@@ -5,7 +5,7 @@ on:
     branches:
       - node
   schedule:
-    - cron: '30 10 * * *' 
+    - cron: '0 10 * * *' 
   workflow_dispatch:
   watch:
     types: started

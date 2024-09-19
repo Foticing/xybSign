@@ -1,0 +1,30 @@
+name: 签退 # yml文件名
+ 
+on:
+  push:
+    branches:
+      - node
+  schedule:
+    - cron: '30 10 * * *' 
+  workflow_dispatch:
+  watch:
+    types: started
+ 
+jobs:
+  run-check-in: # 任务名
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        
+      - uses: actions/setup-node@v3
+        with:
+          node-version: '20.x'
+          
+      - name: 安装依赖  
+        run: |
+          npm install
+
+      - name: 运行签到
+        run: |
+          node ./index.js '${{ secrets.XYB_OUT }}'

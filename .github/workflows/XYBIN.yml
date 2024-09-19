@@ -3,7 +3,7 @@ name: 签到 # yml文件名
 on:
  push:
    branches:
-     - node
+     - main
  schedule:
    # https://crontab.guru/
    # UTC 时间，中国时区应加 8

@@ -2,16 +2,10 @@ name: 签到 # yml文件名
  
 on:
   workflow_dispatch:
-  schedule:   
-    # https://crontab.guru/
-    # UTC 时间，中国时区应减 8
-    #         ┌────────── minute (0 - 59)
-    #         │ ┌──────── hour (0 - 23)
-    #         │ │ ┌────── day of the month (1 - 31)
-    #         │ │ │ ┌──── month (1 - 12 or JAN-DEC)
-    #         │ │ │ │ ┌── day of the week (0 - 6 or SUN-SAT)
-    #         │ │ │ │ │
-    - cron: '16 1 * * *'
+  push:
+    branches: [ main ]
+  schedule:
+    - cron: '0 1 * * *'
  
 jobs:
   run-check-in: # 任务名

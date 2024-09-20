@@ -1,17 +1,15 @@
 name: 签退 # yml文件名
  
 on:
-  push:
-    branches: [ origin ]
   schedule:   
-    - cron: '23 2 * * *'
+    - cron: '35 2 * * *'
   workflow_dispatch:
  
 jobs:
   run-check-in: # 任务名
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: Checkout repositorya
         uses: actions/checkout@v3
         
       - uses: actions/setup-node@v3

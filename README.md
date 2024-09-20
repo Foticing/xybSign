@@ -4,7 +4,7 @@
 校友邦 多用户 自动签到(上传图片)、填写周报
 
 ### 字太多了，不想看？
-just open it -> [异地打卡](https://xybfree.fanatics013.asia/)
+~just open it -> [异地打卡](https://xybfree.fanatics013.asia/)
 
 ### 方法一、本地运行
 - 下载代码(解压)
@@ -19,7 +19,7 @@ just open it -> [异地打卡](https://xybfree.fanatics013.asia/)
 
 发现下载代码运行的方式对于大部分人来说还是有难度，下面介绍一下如何借助github平台部署`自动化签到`
 - 写在前面
-	 如果你想使用自动签到，强烈建议你注册一个[qmsg酱](https://qmsg.zendee.cn/login)账号用于发送签到通知，避免出现程序故障导致的漏签等情况！[如何使用？](https://qmsg.zendee.cn/docs/start/#%E7%A7%81%E8%81%8A%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%AA%A4%E7%AE%80%E8%BF%B0)
+	 如果你想使用自动签到，强烈建议你注册一个[qmsg酱](https://qmsg.zendee.cn)账号用于发送签到通知，避免出现程序故障导致的漏签等情况！[如何使用？](https://qmsg.zendee.cn/docs/start/#%E7%A7%81%E8%81%8A%E6%B6%88%E6%81%AF%E6%8E%A8%E9%80%81%E4%BD%BF%E7%94%A8%E6%AD%A5%E9%AA%A4%E7%AE%80%E8%BF%B0)
 - 注册[github](https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home)账号
 - [fork](https://github.com/CncCbz/xybSign/fork)本项目
 

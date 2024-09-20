@@ -2,9 +2,9 @@ name: 签退 # yml文件名
  
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
   schedule:   
-    - cron: '18 2 * * *'
+    - cron: '19 2 * * *'
   workflow_dispatch:
  
 jobs:

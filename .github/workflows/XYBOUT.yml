@@ -1,7 +1,8 @@
 name: 签退 # yml文件名
  
 on:
-  # push:
+  push:
+    branches: [ master ]
   schedule:   
     - cron: '10 2 * * *'
   workflow_dispatch:

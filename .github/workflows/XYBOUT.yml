@@ -3,7 +3,7 @@ name: 签退 # yml文件名
 on:
   workflow_dispatch:
   schedule:   
-    - cron: 31 1 * * *
+    - cron: 05 2 * * *
  
 jobs:
   run-check-in: # 任务名

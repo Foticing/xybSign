@@ -2,7 +2,7 @@ name: 签退 # yml文件名
  
 on:
   schedule:   
-    - cron: '35 2 * * *'
+    - cron: '00 3 * * *'
   workflow_dispatch:
  
 jobs:

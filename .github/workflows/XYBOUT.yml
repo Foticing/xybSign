@@ -1,14 +1,11 @@
 name: 签退 # yml文件名
  
 on:
-  push:
-    branches:
-      - main
   schedule:
-    - cron: '37 10 * * *' 
+    - cron: '18 1 * * *' 
   workflow_dispatch:
   watch:
-    types: started
+    types: stopped
 
 jobs:
   run-check-in: # 任务名

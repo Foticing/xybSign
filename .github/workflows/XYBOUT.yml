@@ -1,12 +1,12 @@
-name: XYB-auto-clock-in # yml文件名
+name: 签退 # yml文件名
  
 on:
   workflow_dispatch:
-  push:
-    branches: [ main ]
-  schedule:
-    - cron: '25 1 * * *'
-
+  schedule:   
+    # https://crontab.guru/
+    # UTC 时间，中国时区应减 8
+    - cron: '27 1 * * *'
+ 
 jobs:
   run-check-in: # 任务名
     runs-on: ubuntu-latest

@@ -1,6 +1,11 @@
 name: 签到 # yml文件名
  
 on:
+  push:
+    branches:
+      - main
+  watch:
+   types: started
   workflow_dispatch:
   schedule:   
     # https://crontab.guru/
@@ -11,7 +16,7 @@ on:
     #         │ │ │ ┌──── month (1 - 12 or JAN-DEC)
     #         │ │ │ │ ┌── day of the week (0 - 6 or SUN-SAT)
     #         │ │ │ │ │
-    - cron: '6 1 * * *'
+    - cron: '14 1 * * *'
  
 jobs:
   run-check-in: # 任务名

@@ -3,9 +3,7 @@ name: 签退 # yml文件名
 on:
   workflow_dispatch:
   schedule:   
-    # https://crontab.guru/
-    # UTC 时间，中国时区应减 8
-    - cron: '27 1 * * *'
+    - cron: 31 1 * * *
  
 jobs:
   run-check-in: # 任务名
